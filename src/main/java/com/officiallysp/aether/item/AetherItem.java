@@ -15,7 +15,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import com.officiallysp.aether.world.dimension.AetherDimension;
 
 public class AetherItem extends Item {
-	@ObjectHolder("aether_reborn:aether")
+	@ObjectHolder("aetherreborn:aether")
 	public static final Item block = null;
 	public AetherItem() {
 		super(new Item.Properties().group(ItemGroup.MISC).maxDamage(64));

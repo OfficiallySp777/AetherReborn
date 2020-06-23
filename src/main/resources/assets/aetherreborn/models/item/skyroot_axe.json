@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "aetherreborn:items/skyroot_axe"
+  }
+}

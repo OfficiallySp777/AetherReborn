@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "aether_reborn:blocks/aether_dirt",
-    "particle": "aether_reborn:blocks/aether_dirt"
-  }
-}

@@ -16,13 +16,13 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.AetherrebornModElements;
 
-@AetherRebornModElements.ModElement.Tag
-public class AetherGrassBlock extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:aether_grass")
+@AetherrebornModElements.ModElement.Tag
+public class AetherGrassBlock extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:aether_grass")
 	public static final Block block = null;
-	public AetherGrassBlock(AetherRebornModElements instance) {
+	public AetherGrassBlock(AetherrebornModElements instance) {
 		super(instance, 2);
 	}
 

@@ -16,13 +16,13 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.AetherrebornModElements;
 
-@AetherRebornModElements.ModElement.Tag
-public class SkyrootPlankBlock extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:skyroot_plank")
+@AetherrebornModElements.ModElement.Tag
+public class SkyrootPlankBlock extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:skyroot_plank")
 	public static final Block block = null;
-	public SkyrootPlankBlock(AetherRebornModElements instance) {
+	public SkyrootPlankBlock(AetherrebornModElements instance) {
 		super(instance, 8);
 	}
 

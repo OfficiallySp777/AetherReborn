@@ -35,13 +35,13 @@ import com.officiallysp.aether.block.SkyrootLogBlock;
 import com.officiallysp.aether.block.SkyrootLeavesBlock;
 import com.officiallysp.aether.block.AetherGrassBlock;
 import com.officiallysp.aether.block.AetherDirtBlock;
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.AetherrebornModElements;
 
-@AetherRebornModElements.ModElement.Tag
-public class HighlandsBiome extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:highlands")
+@AetherrebornModElements.ModElement.Tag
+public class HighlandsBiome extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:highlands")
 	public static final CustomBiome biome = null;
-	public HighlandsBiome(AetherRebornModElements instance) {
+	public HighlandsBiome(AetherrebornModElements instance) {
 		super(instance, 4);
 	}
 

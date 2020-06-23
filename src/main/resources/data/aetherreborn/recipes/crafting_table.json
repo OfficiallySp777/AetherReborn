@@ -1,0 +1,22 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    {
+      "item": "aetherreborn:skyroot_plank"
+    }
+  ],
+  "result": {
+    "item": "minecraft:crafting_table",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aetherreborn:skyroot_log"
+    }
+  ],
+  "result": {
+    "item": "aetherreborn:skyroot_plank",
+    "count": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "aetherreborn:block/aether_portal_ew"
+    },
+    "axis=x": {
+      "model": "aetherreborn:block/aether_portal_ns"
+    }
+  }
+}

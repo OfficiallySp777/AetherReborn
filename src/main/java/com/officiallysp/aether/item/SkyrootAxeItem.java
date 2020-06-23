@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.AetherrebornModElements;
 
-@AetherRebornModElements.ModElement.Tag
-public class SkyrootAxeItem extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:skyroot_axe")
+@AetherrebornModElements.ModElement.Tag
+public class SkyrootAxeItem extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:skyroot_axe")
 	public static final Item block = null;
-	public SkyrootAxeItem(AetherRebornModElements instance) {
+	public SkyrootAxeItem(AetherrebornModElements instance) {
 		super(instance, 11);
 	}
 

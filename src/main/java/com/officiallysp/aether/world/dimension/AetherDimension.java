@@ -86,22 +86,22 @@ import java.util.Arrays;
 import java.lang.reflect.Method;
 
 import com.officiallysp.aether.item.AetherItem;
-import com.officiallysp.aether.block.HolystoneBlock;
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.block.HolystoneBlockBlock;
+import com.officiallysp.aether.AetherrebornModElements;
 
 import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.cache.LoadingCache;
 
-@AetherRebornModElements.ModElement.Tag
-public class AetherDimension extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:aether")
+@AetherrebornModElements.ModElement.Tag
+public class AetherDimension extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:aether")
 	public static final ModDimension dimension = null;
-	@ObjectHolder("aether_reborn:aether_portal")
+	@ObjectHolder("aetherreborn:aether_portal")
 	public static final CustomPortalBlock portal = null;
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
-	public AetherDimension(AetherRebornModElements instance) {
+	public AetherDimension(AetherrebornModElements instance) {
 		super(instance, 6);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -114,15 +114,15 @@ public class AetherDimension extends AetherRebornModElements.ModElement {
 
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
-		if (DimensionType.byName(new ResourceLocation("aether_reborn:aether")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("aether_reborn:aether"), dimension, null, true);
+		if (DimensionType.byName(new ResourceLocation("aetherreborn:aether")) == null) {
+			DimensionManager.registerDimension(new ResourceLocation("aetherreborn:aether"), dimension, null, true);
 		}
-		type = DimensionType.byName(new ResourceLocation("aether_reborn:aether"));
+		type = DimensionType.byName(new ResourceLocation("aetherreborn:aether"));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("aether_reborn:highlands")),};
+		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("aetherreborn:highlands")),};
 	}
 
 	@Override
@@ -715,7 +715,7 @@ public class AetherDimension extends AetherRebornModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new EndGenerationSettings() {
 				public BlockState getDefaultBlock() {
-					return HolystoneBlock.block.getDefaultState();
+					return HolystoneBlockBlock.block.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {

@@ -19,11 +19,11 @@ import java.util.Collections;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
-public class AetherDirtBlock extends AetherrebornModElements.ModElement {
-	@ObjectHolder("aetherreborn:aether_dirt")
+public class HolystoneBlockBlock extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:holystone_block")
 	public static final Block block = null;
-	public AetherDirtBlock(AetherrebornModElements instance) {
-		super(instance, 1);
+	public HolystoneBlockBlock(AetherrebornModElements instance) {
+		super(instance, 21);
 	}
 
 	@Override
@@ -34,8 +34,8 @@ public class AetherDirtBlock extends AetherrebornModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("aether_dirt");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("holystone_block");
 		}
 
 		@Override

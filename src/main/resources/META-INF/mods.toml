@@ -2,14 +2,17 @@ modLoader="javafml"
 loaderVersion="[31,)"
 
 [[mods]]
-modId="aether_reborn"
+modId="aetherreborn"
 version="1.0.0"
 displayName="Aether Reborn"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="shane, MCreator"
+credits="Cheese"
+displayURL="https://officiallysp.sytes.net"
+authors="Shane"
+description='''
+OwO Whats This
+'''
 
-[[dependencies.aether_reborn]]
+[[dependencies.aetherreborn]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"

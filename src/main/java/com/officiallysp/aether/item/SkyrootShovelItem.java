@@ -9,13 +9,13 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
-import com.officiallysp.aether.AetherRebornModElements;
+import com.officiallysp.aether.AetherrebornModElements;
 
-@AetherRebornModElements.ModElement.Tag
-public class SkyrootShovelItem extends AetherRebornModElements.ModElement {
-	@ObjectHolder("aether_reborn:skyroot_shovel")
+@AetherrebornModElements.ModElement.Tag
+public class SkyrootShovelItem extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:skyroot_shovel")
 	public static final Item block = null;
-	public SkyrootShovelItem(AetherRebornModElements instance) {
+	public SkyrootShovelItem(AetherrebornModElements instance) {
 		super(instance, 13);
 	}
 

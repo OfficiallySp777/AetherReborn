@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aetherreborn:blocks/holystone",
+    "particle": "aetherreborn:blocks/holystone"
+  }
+}
