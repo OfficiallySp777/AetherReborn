@@ -65,13 +65,22 @@
       "registry_name": "aether"
     },
     {
-      "name": "Decay",
+      "name": "Logs",
       "type": "tag",
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "decay"
+      "registry_name": "logs"
+    },
+    {
+      "name": "Leaves",
+      "type": "tag",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaves"
     }
   ],
   "variable_elements": [],

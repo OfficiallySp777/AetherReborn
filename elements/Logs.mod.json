@@ -3,14 +3,18 @@
   "_type": "tag",
   "definition": {
     "type": "Blocks",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:SkyrootLog"
+      }
+    ],
     "blocks": [
       {
         "value": "CUSTOM:SkyrootLog"
       }
     ],
     "functions": [],
-    "name": "oak_log",
+    "name": "logs",
     "namespace": "minecraft"
   }
 }
