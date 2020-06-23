@@ -1,7 +1,12 @@
 {
-  "block.aether_reborn.aether_dirt": "Aether Dirt",
+  "item.aether_reborn.skyroot_sword": "Skyroot Sword",
+  "item.aether_reborn.skyroot_axe": "Skyroot Axe",
   "block.aether_reborn.skyroot_log": "Skyroot Log",
   "item.aether_reborn.aether": "Enchanted Water",
+  "item.aether_reborn.skyroot_shovel": "Skyroot Shovel",
+  "item.aether_reborn.skyroot_pickaxe": "Skyroot Pickaxe",
+  "block.aether_reborn.skyroot_plank": "Skyroot Plank",
+  "block.aether_reborn.aether_dirt": "Aether Dirt",
   "block.aether_reborn.skyroot_leaves": "Skyroot Leaves",
   "block.aether_reborn.aether_grass": "Aether Grass",
   "block.aether_reborn.holystone": "Holystone"
