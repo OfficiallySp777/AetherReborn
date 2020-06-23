@@ -63,6 +63,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aether"
+    },
+    {
+      "name": "Decay",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "decay"
     }
   ],
   "variable_elements": [],
