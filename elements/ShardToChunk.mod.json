@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AmbrosiumShard"
+      },
+      {
+        "value": "CUSTOM:AmbrosiumShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AmbrosiumShard"
+      },
+      {
+        "value": "CUSTOM:AmbrosiumShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AmbrosiumChunk"
+    },
+    "name": "shard_to_chunk",
+    "namespace": "mod"
+  }
+}

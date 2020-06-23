@@ -19,10 +19,10 @@ import java.util.Collections;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
-public class HolystoneBlockBlock extends AetherrebornModElements.ModElement {
-	@ObjectHolder("aetherreborn:holystone_block")
+public class HolyStoneBlock extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:holy_stone")
 	public static final Block block = null;
-	public HolystoneBlockBlock(AetherrebornModElements instance) {
+	public HolyStoneBlock(AetherrebornModElements instance) {
 		super(instance, 21);
 	}
 
@@ -35,7 +35,7 @@ public class HolystoneBlockBlock extends AetherrebornModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("holystone_block");
+			setRegistryName("holy_stone");
 		}
 
 		@Override

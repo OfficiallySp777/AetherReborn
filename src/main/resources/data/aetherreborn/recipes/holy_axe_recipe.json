@@ -1,0 +1,30 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "1": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "2": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:holy_axe",
+    "count": 1
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "aetherreborn:block/holystone_block",
+  "parent": "aetherreborn:block/holy_stone",
   "display": {
     "thirdperson": {
       "rotation": [

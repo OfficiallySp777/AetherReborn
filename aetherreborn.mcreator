@@ -173,13 +173,138 @@
       "registry_name": "crafting_table"
     },
     {
-      "name": "HolystoneBlock",
+      "name": "HolyStone",
       "type": "block",
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "holystone_block"
+      "registry_name": "holy_stone"
+    },
+    {
+      "name": "HolyPickaxe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_pickaxe"
+    },
+    {
+      "name": "HolyAxe",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_axe"
+    },
+    {
+      "name": "HolySword",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_sword"
+    },
+    {
+      "name": "HolyShovel",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_shovel"
+    },
+    {
+      "name": "HolyPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_pickaxe_recipe"
+    },
+    {
+      "name": "HolyAxeRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_axe_recipe"
+    },
+    {
+      "name": "HolySwordRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_sword_recipe"
+    },
+    {
+      "name": "HolyShovelRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_shovel_recipe"
+    },
+    {
+      "name": "HolyPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holy_pickaxe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmbrosiumShard",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambrosium_shard"
+    },
+    {
+      "name": "AmbrosiumChunk",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambrosium_chunk"
+    },
+    {
+      "name": "ChunkToShard",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chunk_to_shard"
+    },
+    {
+      "name": "ShardToChunk",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shard_to_chunk"
     }
   ],
   "variable_elements": [],
@@ -206,16 +331,22 @@
       "block.hmmmm.holystone": "Holystone",
       "block.aetherreborn.aether_dirt": "Aether Dirt",
       "block.aetherreborn.skyroot_leaves": "Skyroot Leaves",
+      "item.aetherreborn.holy_axe": "Holystone Axe",
+      "item.aetherreborn.holy_shovel": "Holystone Shovel",
+      "item.aetherreborn.ambrosium_shard": "Ambrosium Shard",
       "block.aether_reborn.holystone": "Holystone",
       "block.aetherreborn.skyroot_plank": "Skyroot Plank",
+      "item.aetherreborn.holy_pickaxe": "Holystone Pickaxe",
       "block.hmmmm.skyroot_log": "Skyroot Log",
       "block.aether_reborn.skyroot_log": "Skyroot Log",
       "item.aether_reborn.skyroot_shovel": "Skyroot Shovel",
       "block.aetherreborn.skyroot_log": "Skyroot Log",
+      "item.aetherreborn.ambrosium_chunk": "Ambrosium Chunk",
+      "item.aetherreborn.holy_sword": "Holystone Sword",
       "item.hmmmm.skyroot_sword": "Skyroot Sword",
+      "block.aetherreborn.holy_stone": "Holystone",
       "item.aetherreborn.skyroot_axe": "Skyroot Axe",
       "block.aether_reborn.aether_dirt": "Aether Dirt",
-      "block.aetherreborn.holystone_block": "Holystone Block",
       "block.aether_reborn.skyroot_leaves": "Skyroot Leaves",
       "item.hmmmm.skyroot_axe": "Skyroot Axe",
       "block.aether_reborn.aether_grass": "Aether Grass",

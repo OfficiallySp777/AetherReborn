@@ -1,0 +1,22 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aetherreborn:ambrosium_shard"
+    },
+    {
+      "item": "aetherreborn:ambrosium_shard"
+    },
+    {
+      "item": "aetherreborn:ambrosium_shard"
+    },
+    {
+      "item": "aetherreborn:ambrosium_shard"
+    }
+  ],
+  "result": {
+    "item": "aetherreborn:ambrosium_chunk",
+    "count": 1
+  }
+}

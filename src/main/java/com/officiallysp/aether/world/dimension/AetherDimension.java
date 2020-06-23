@@ -86,7 +86,7 @@ import java.util.Arrays;
 import java.lang.reflect.Method;
 
 import com.officiallysp.aether.item.AetherItem;
-import com.officiallysp.aether.block.HolystoneBlockBlock;
+import com.officiallysp.aether.block.HolyStoneBlock;
 import com.officiallysp.aether.AetherrebornModElements;
 
 import com.google.common.collect.Sets;
@@ -715,7 +715,7 @@ public class AetherDimension extends AetherrebornModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new EndGenerationSettings() {
 				public BlockState getDefaultBlock() {
-					return HolystoneBlockBlock.block.getDefaultState();
+					return HolyStoneBlock.block.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
