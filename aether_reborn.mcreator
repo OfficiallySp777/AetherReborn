@@ -1,0 +1,97 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "AetherDirt",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aether_dirt"
+    },
+    {
+      "name": "AetherGrass",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aether_grass"
+    },
+    {
+      "name": "Holystone",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holystone"
+    },
+    {
+      "name": "SkyrootLog",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_log"
+    },
+    {
+      "name": "SkyrootLeaves",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_leaves"
+    },
+    {
+      "name": "Highlands",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "highlands"
+    },
+    {
+      "name": "Aether",
+      "type": "dimension",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aether"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.aether_reborn.aether_dirt": "Aether Dirt",
+      "block.aether_reborn.skyroot_log": "Skyroot Log",
+      "item.aether_reborn.aether": "Enchanted Water",
+      "block.aether_reborn.skyroot_leaves": "Skyroot Leaves",
+      "block.aether_reborn.aether_grass": "Aether Grass",
+      "block.aether_reborn.holystone": "Holystone"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "aether_reborn",
+    "modName": "Aether Reborn",
+    "version": "1.0.0",
+    "author": "shane, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "com.officiallysp.aether",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000322116
+}
