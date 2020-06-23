@@ -19,6 +19,9 @@
     "usageCount": 250,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": []
+    "repairItems": [],
+    "onBlockDestroyedWithTool": {
+      "name": "HolyPickaxeBlockDestroyedWithTool"
+    }
   }
 }

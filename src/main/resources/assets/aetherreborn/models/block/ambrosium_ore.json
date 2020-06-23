@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aetherreborn:blocks/ambrosium_ore",
+    "particle": "aetherreborn:blocks/ambrosium_ore"
+  }
+}

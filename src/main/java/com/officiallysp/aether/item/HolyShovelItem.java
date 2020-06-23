@@ -3,11 +3,17 @@ package com.officiallysp.aether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ShovelItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.BlockState;
 
+import com.officiallysp.aether.procedures.HolyShovelBlockDestroyedWithToolProcedure;
 import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 import com.officiallysp.aether.AetherrebornModElements;
 
@@ -46,6 +52,18 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(AetherTabItemGroup.tab)) {
+			@Override
+			public boolean onBlockDestroyed(ItemStack itemstack, World world, BlockState bl, BlockPos pos, LivingEntity entity) {
+				boolean retval = super.onBlockDestroyed(itemstack, world, bl, pos, entity);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					HolyShovelBlockDestroyedWithToolProcedure.executeProcedure($_dependencies);
+				}
+				return retval;
+			}
 		}.setRegistryName("holy_shovel"));
 	}
 }
