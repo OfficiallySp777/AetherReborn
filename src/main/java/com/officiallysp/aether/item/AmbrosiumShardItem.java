@@ -4,10 +4,10 @@ package com.officiallysp.aether.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
@@ -15,7 +15,7 @@ public class AmbrosiumShardItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:ambrosium_shard")
 	public static final Item block = null;
 	public AmbrosiumShardItem(AetherrebornModElements instance) {
-		super(instance, 32);
+		super(instance, 10);
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class AmbrosiumShardItem extends AetherrebornModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
+			super(new Item.Properties().group(AetherTabItemGroup.tab).maxStackSize(64));
 			setRegistryName("ambrosium_shard");
 		}
 

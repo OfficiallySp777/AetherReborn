@@ -8,7 +8,7 @@
     "name": "Holystone Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:AetherTab"
     },
     "toolType": "Sword",
     "harvestLevel": 2,

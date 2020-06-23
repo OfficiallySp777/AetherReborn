@@ -8,7 +8,7 @@
     "name": "Holystone Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AetherTab"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 2,

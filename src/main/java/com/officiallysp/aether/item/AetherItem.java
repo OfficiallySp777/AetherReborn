@@ -8,17 +8,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import com.officiallysp.aether.world.dimension.AetherDimension;
+import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 
 public class AetherItem extends Item {
 	@ObjectHolder("aetherreborn:aether")
 	public static final Item block = null;
 	public AetherItem() {
-		super(new Item.Properties().group(ItemGroup.MISC).maxDamage(64));
+		super(new Item.Properties().group(AetherTabItemGroup.tab).maxDamage(64));
 	}
 
 	@Override

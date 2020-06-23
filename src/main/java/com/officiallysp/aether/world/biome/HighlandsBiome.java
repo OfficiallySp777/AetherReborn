@@ -42,7 +42,7 @@ public class HighlandsBiome extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:highlands")
 	public static final CustomBiome biome = null;
 	public HighlandsBiome(AetherrebornModElements instance) {
-		super(instance, 4);
+		super(instance, 20);
 	}
 
 	@Override

@@ -14,7 +14,7 @@
     },
     "igniterName": "Enchanted Water",
     "igniterTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AetherTab"
     },
     "texture": "enchantedbucket",
     "portalTexture": "aether_portal",

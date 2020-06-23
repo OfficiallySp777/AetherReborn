@@ -5,10 +5,10 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
@@ -16,7 +16,7 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_shovel")
 	public static final Item block = null;
 	public HolyShovelItem(AetherrebornModElements instance) {
-		super(instance, 25);
+		super(instance, 17);
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(AetherTabItemGroup.tab)) {
 		}.setRegistryName("holy_shovel"));
 	}
 }

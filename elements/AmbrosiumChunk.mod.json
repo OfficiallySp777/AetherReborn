@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Ambrosium Chunk",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AetherTab"
     },
     "stackSize": 64,
     "enchantability": 0,

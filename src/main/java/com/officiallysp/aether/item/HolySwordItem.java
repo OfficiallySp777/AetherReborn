@@ -5,10 +5,10 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
@@ -16,7 +16,7 @@ public class HolySwordItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_sword")
 	public static final Item block = null;
 	public HolySwordItem(AetherrebornModElements instance) {
-		super(instance, 24);
+		super(instance, 19);
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class HolySwordItem extends AetherrebornModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -3f, new Item.Properties().group(AetherTabItemGroup.tab)) {
 		}.setRegistryName("holy_sword"));
 	}
 }

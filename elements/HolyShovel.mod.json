@@ -8,7 +8,7 @@
     "name": "Holystone Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AetherTab"
     },
     "toolType": "Spade",
     "harvestLevel": 2,

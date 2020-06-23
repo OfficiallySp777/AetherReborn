@@ -34,7 +34,6 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -60,6 +59,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
+import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 import com.officiallysp.aether.gui.IncubatorGUIGui;
 import com.officiallysp.aether.AetherrebornModElements;
 
@@ -70,15 +70,14 @@ public class IncubatorBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:incubator")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public IncubatorBlock(AetherrebornModElements instance) {
-		super(instance, 36);
+		super(instance, 6);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(AetherTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@SubscribeEvent
@@ -89,7 +88,7 @@ public class IncubatorBlock extends AetherrebornModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
