@@ -305,6 +305,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shard_to_chunk"
+    },
+    {
+      "name": "Incubator",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "incubator"
+    },
+    {
+      "name": "IncubatorGUI",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "incubator_gui"
+    },
+    {
+      "name": "IncubatorRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "incubator_recipe"
     }
   ],
   "variable_elements": [],
@@ -323,6 +350,7 @@
       "item.aetherreborn.skyroot_sword": "Skyroot Sword",
       "item.aetherreborn.skyroot_shovel": "Skyroot Shovel",
       "item.aetherreborn.aether": "Enchanted Water",
+      "block.aetherreborn.incubator": "Incubator",
       "block.hmmmm.skyroot_plank": "Skyroot Plank",
       "block.aetherreborn.aether_grass": "Aether Grass",
       "block.aether_reborn.skyroot_plank": "Skyroot Plank",
@@ -357,7 +385,7 @@
     "modid": "aetherreborn",
     "modName": "Aether Reborn",
     "version": "1.0.0",
-    "description": "OwO Whats This",
+    "description": "The Aether Mod Updated To Modern Minecraft",
     "author": "Shane",
     "websiteURL": "https://officiallysp.sytes.net",
     "disableForgeVersionCheck": true,
@@ -367,7 +395,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
-    "credits": "Cheese",
+    "credits": "Gilded Games.",
     "modElementsPackage": "com.officiallysp.aether",
     "lockBaseModFiles": false
   },

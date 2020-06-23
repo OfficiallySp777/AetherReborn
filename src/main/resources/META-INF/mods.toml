@@ -5,11 +5,11 @@ loaderVersion="[31,)"
 modId="aetherreborn"
 version="1.0.0"
 displayName="Aether Reborn"
-credits="Cheese"
+credits="Gilded Games."
 displayURL="https://officiallysp.sytes.net"
 authors="Shane"
 description='''
-OwO Whats This
+The Aether Mod Updated To Modern Minecraft
 '''
 
 [[dependencies.aetherreborn]]
