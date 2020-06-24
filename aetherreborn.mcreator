@@ -386,6 +386,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ambrosium_ore"
+    },
+    {
+      "name": "SkyrootStick",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_stick"
+    },
+    {
+      "name": "PlankToStick",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plank_to_stick"
+    },
+    {
+      "name": "AmbrosiumTorch",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambrosium_torch"
     }
   ],
   "variable_elements": [],
@@ -395,6 +422,7 @@
       "item.hmmmm.skyroot_shovel": "Skyroot Shovel",
       "item.aetherreborn.skyroot_pickaxe": "Skyroot Pickaxe",
       "item.hmmmm.skyroot_pickaxe": "Skyroot Pickaxe",
+      "block.aetherreborn.ambrosium_torch": "Ambrosium Torch",
       "item.aether_reborn.skyroot_sword": "Skyroot Sword",
       "item.aether_reborn.skyroot_axe": "Skyroot Axe",
       "block.hmmmm.aether_dirt": "Aether Dirt",
@@ -420,6 +448,7 @@
       "item.aetherreborn.ambrosium_shard": "Ambrosium Shard",
       "block.aether_reborn.holystone": "Holystone",
       "block.aetherreborn.skyroot_plank": "Skyroot Plank",
+      "item.aetherreborn.skyroot_stick": "Skyroot Stick",
       "item.aetherreborn.holy_pickaxe": "Holystone Pickaxe",
       "block.hmmmm.skyroot_log": "Skyroot Log",
       "block.aether_reborn.skyroot_log": "Skyroot Log",

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "aetherreborn:blocks/ambrosium_torch",
+    "up": "aetherreborn:blocks/ambrosium_torch",
+    "north": "aetherreborn:blocks/ambrosium_torch",
+    "east": "aetherreborn:blocks/ambrosium_torch",
+    "south": "aetherreborn:blocks/ambrosium_torch",
+    "west": "aetherreborn:blocks/ambrosium_torch",
+    "particle": "aetherreborn:blocks/ambrosium_torch"
+  }
+}
