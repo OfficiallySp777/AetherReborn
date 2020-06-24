@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import com.officiallysp.aether.world.dimension.AetherDimension;
+import com.officiallysp.aether.procedures.AetherPortalTriggerUsedProcedure;
 import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
 
 public class AetherItem extends Item {
@@ -32,6 +33,17 @@ public class AetherItem extends Item {
 		} else {
 			if (world.isAirBlock(pos))
 				AetherDimension.portal.portalSpawn(world, pos);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				AetherPortalTriggerUsedProcedure.executeProcedure($_dependencies);
+			}
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;
 		}

@@ -52,6 +52,18 @@
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false
+    "imitateOverworldBehaviour": false,
+    "whenPortaTriggerlUsed": {
+      "name": "AetherPortalTriggerUsed"
+    },
+    "onPortalTickUpdate": {
+      "name": "AetherOnPortalTickUpdate"
+    },
+    "onPlayerEntersDimension": {
+      "name": "AetherPlayerEntersDimension"
+    },
+    "onPlayerLeavesDimension": {
+      "name": "AetherPlayerLeavesDimension"
+    }
   }
 }
