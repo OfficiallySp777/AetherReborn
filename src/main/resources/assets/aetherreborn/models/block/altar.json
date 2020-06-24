@@ -1,0 +1,7 @@
+{
+  "parent": "aetherreborn:custom/altar",
+  "textures": {
+    "all": "aetherreborn:blocks/altar",
+    "particle": "aetherreborn:blocks/altar"
+  }
+}

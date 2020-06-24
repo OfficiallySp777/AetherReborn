@@ -770,6 +770,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "healing_stone_discharged"
+    },
+    {
+      "name": "Altar",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "altar"
+    },
+    {
+      "name": "AltarGUI",
+      "type": "gui",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "altar_gui"
     }
   ],
   "variable_elements": [],
@@ -828,6 +846,7 @@
       "item.hmmmm.skyroot_pickaxe": "Skyroot Pickaxe",
       "block.aetherreborn.ambrosium_torch": "Ambrosium Torch",
       "block.aetherreborn.zanite_ore": "Zanite Ore",
+      "block.aetherreborn.altar": "Altar",
       "item.aether_reborn.skyroot_sword": "Skyroot Sword",
       "item.aether_reborn.skyroot_axe": "Skyroot Axe",
       "block.aetherreborn.gravitite_ore": "Gravitite Ore",

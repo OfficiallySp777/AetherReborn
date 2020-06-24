@@ -1,0 +1,48 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "name": "Slot #0",
+          "x": 300,
+          "y": 150
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:AmbrosiumShard"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "name": "Slot #1",
+          "x": 372,
+          "y": 150
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "name": "Slot #2",
+          "x": 516,
+          "y": 150
+        }
+      }
+    ]
+  }
+}
