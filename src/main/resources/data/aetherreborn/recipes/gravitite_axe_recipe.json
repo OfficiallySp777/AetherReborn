@@ -1,0 +1,30 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "1": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "2": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "3": {
+      "item": "aetherreborn:skyroot_stick"
+    },
+    "5": {
+      "item": "aetherreborn:skyroot_stick"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:gravitite_axe",
+    "count": 1
+  }
+}

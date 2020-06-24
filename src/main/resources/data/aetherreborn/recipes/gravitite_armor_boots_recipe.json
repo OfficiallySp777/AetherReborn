@@ -1,0 +1,26 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "2": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "3": {
+      "item": "aetherreborn:gravitite_ore_block"
+    },
+    "5": {
+      "item": "aetherreborn:gravitite_ore_block"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:gravitite_armorboots",
+    "count": 1
+  }
+}

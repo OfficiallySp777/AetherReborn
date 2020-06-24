@@ -612,6 +612,147 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "zanite_ore"
+    },
+    {
+      "name": "GravititeOre",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_ore"
+    },
+    {
+      "name": "GravititeOreBlock",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_ore_block"
+    },
+    {
+      "name": "GravititePickaxe",
+      "type": "tool",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_pickaxe"
+    },
+    {
+      "name": "GravititeAxe",
+      "type": "tool",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_axe"
+    },
+    {
+      "name": "GravititeSword",
+      "type": "tool",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_sword"
+    },
+    {
+      "name": "GravititeShovel",
+      "type": "tool",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_shovel"
+    },
+    {
+      "name": "GravititePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_pickaxe_recipe"
+    },
+    {
+      "name": "GravititeAxeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_axe_recipe"
+    },
+    {
+      "name": "GravititeSwordRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_sword_recipe"
+    },
+    {
+      "name": "GravititeShovelRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_shovel_recipe"
+    },
+    {
+      "name": "GravititeArmor",
+      "type": "armor",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "GravititeArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_armor_helmet_recipe"
+    },
+    {
+      "name": "GravititeArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_armor_body_recipe"
+    },
+    {
+      "name": "GravititeArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_armor_leggings_recipe"
+    },
+    {
+      "name": "GravititeArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitite_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -636,9 +777,12 @@
     "en_us": {
       "item.aetherreborn.zanite_armorlegs": "Zanite Leggings",
       "item.aetherreborn.zanite_armorbody": "Zanite Chestplate",
+      "block.aetherreborn.gravitite_ore_block": "Enchanted Gravitite",
+      "item.aetherreborn.gravitite_armorlegs": "Gravitite Leggings",
       "block.hmmmm.aether_dirt": "Aether Dirt",
       "item.aether_reborn.aether": "Enchanted Water",
       "item.hmmmm.aether": "Enchanted Water",
+      "item.aetherreborn.gravitite_armorboots": "Gravitite Boots",
       "item.aether_reborn.skyroot_pickaxe": "Skyroot Pickaxe",
       "item.aetherreborn.skyroot_shovel": "Skyroot Shovel",
       "item.aetherreborn.aether": "Enchanted Water",
@@ -657,6 +801,8 @@
       "item.aetherreborn.ambrosium_chunk": "Ambrosium Chunk",
       "block.aetherreborn.holy_stone": "Holystone",
       "item.aetherreborn.zanite_shovel": "Zanite Shovel",
+      "item.aetherreborn.gravitite_pickaxe": "Gravitite Pickaxe",
+      "item.aetherreborn.gravitite_armorbody": "Gravitite Chestplate",
       "item.hmmmm.skyroot_axe": "Skyroot Axe",
       "block.aether_reborn.aether_grass": "Aether Grass",
       "block.hmmmm.aether_grass": "Aether Grass",
@@ -667,6 +813,8 @@
       "block.aetherreborn.zanite_ore": "Zanite Ore",
       "item.aether_reborn.skyroot_sword": "Skyroot Sword",
       "item.aether_reborn.skyroot_axe": "Skyroot Axe",
+      "block.aetherreborn.gravitite_ore": "Gravitite Ore",
+      "item.aetherreborn.gravitite_sword": "Gravitite Sword",
       "item.aetherreborn.skyroot_sword": "Skyroot Sword",
       "item.aetherreborn.zanite_pickaxe": "Zanite Pickaxe",
       "block.aetherreborn.incubator": "Incubator",
@@ -677,15 +825,18 @@
       "block.hmmmm.skyroot_leaves": "Skyroot Leaves",
       "block.aether_reborn.skyroot_plank": "Skyroot Plank",
       "block.aetherreborn.aether_dirt": "Aether Dirt",
+      "item.aetherreborn.gravitite_axe": "Gravitite Axe",
       "block.aetherreborn.ambrosium_ore": "Ambrosium Ore",
       "item.aetherreborn.holy_axe": "Holystone Axe",
       "block.aether_reborn.holystone": "Holystone",
       "item.aetherreborn.skyroot_stick": "Skyroot Stick",
+      "item.aetherreborn.gravitite_shovel": "Gravitite Shovel",
       "block.hmmmm.skyroot_log": "Skyroot Log",
       "item.aetherreborn.zanite_sword": "Zanite Sword",
       "block.aetherreborn.skyroot_log": "Skyroot Log",
       "item.aetherreborn.holy_sword": "Holystone Sword",
       "item.hmmmm.skyroot_sword": "Skyroot Sword",
+      "item.aetherreborn.gravitite_armorhelmet": "Gravitite Helmet",
       "item.aetherreborn.skyroot_axe": "Skyroot Axe",
       "block.aether_reborn.aether_dirt": "Aether Dirt",
       "block.aether_reborn.skyroot_leaves": "Skyroot Leaves"

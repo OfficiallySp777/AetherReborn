@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      },
+      {
+        "value": "CUSTOM:GravititeOreBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GravititeArmor.body"
+    },
+    "name": "gravitite_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

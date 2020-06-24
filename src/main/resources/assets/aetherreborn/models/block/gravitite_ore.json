@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aetherreborn:blocks/gravitite_ore",
+    "particle": "aetherreborn:blocks/gravitite_ore"
+  }
+}
