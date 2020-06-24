@@ -307,24 +307,6 @@
       "registry_name": "shard_to_chunk"
     },
     {
-      "name": "Incubator",
-      "type": "block",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "incubator"
-    },
-    {
-      "name": "IncubatorGUI",
-      "type": "gui",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "incubator_gui"
-    },
-    {
       "name": "IncubatorRecipe",
       "type": "recipe",
       "sortid": 36,
@@ -753,6 +735,41 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "gravitite_armor_boots_recipe"
+    },
+    {
+      "name": "HealingStoneChargedRightClickedInAir",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healing_stone_charged_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealingStoneCharged",
+      "type": "item",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healing_stone_charged"
+    },
+    {
+      "name": "HealingStoneDischarged",
+      "type": "item",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healing_stone_discharged"
     }
   ],
   "variable_elements": [],
@@ -778,13 +795,13 @@
       "item.aetherreborn.zanite_armorlegs": "Zanite Leggings",
       "item.aetherreborn.zanite_armorbody": "Zanite Chestplate",
       "block.aetherreborn.gravitite_ore_block": "Enchanted Gravitite",
-      "item.aetherreborn.gravitite_armorlegs": "Gravitite Leggings",
-      "block.hmmmm.aether_dirt": "Aether Dirt",
       "item.aether_reborn.aether": "Enchanted Water",
+      "block.hmmmm.aether_dirt": "Aether Dirt",
+      "item.aetherreborn.gravitite_armorlegs": "Gravitite Leggings",
       "item.hmmmm.aether": "Enchanted Water",
-      "item.aetherreborn.gravitite_armorboots": "Gravitite Boots",
-      "item.aether_reborn.skyroot_pickaxe": "Skyroot Pickaxe",
       "item.aetherreborn.skyroot_shovel": "Skyroot Shovel",
+      "item.aether_reborn.skyroot_pickaxe": "Skyroot Pickaxe",
+      "item.aetherreborn.gravitite_armorboots": "Gravitite Boots",
       "item.aetherreborn.aether": "Enchanted Water",
       "block.hmmmm.skyroot_plank": "Skyroot Plank",
       "item.aetherreborn.zanite_gem": "Zanite Gem",
@@ -816,8 +833,8 @@
       "block.aetherreborn.gravitite_ore": "Gravitite Ore",
       "item.aetherreborn.gravitite_sword": "Gravitite Sword",
       "item.aetherreborn.skyroot_sword": "Skyroot Sword",
+      "item.aetherreborn.healing_stone_discharged": "Healing Stone",
       "item.aetherreborn.zanite_pickaxe": "Zanite Pickaxe",
-      "block.aetherreborn.incubator": "Incubator",
       "item.aetherreborn.zanite_armorboots": "Zanite Boots",
       "block.aetherreborn.aether_grass": "Aether Grass",
       "itemGroup.tabaether_tab": "The Aether",
@@ -839,7 +856,8 @@
       "item.aetherreborn.gravitite_armorhelmet": "Gravitite Helmet",
       "item.aetherreborn.skyroot_axe": "Skyroot Axe",
       "block.aether_reborn.aether_dirt": "Aether Dirt",
-      "block.aether_reborn.skyroot_leaves": "Skyroot Leaves"
+      "block.aether_reborn.skyroot_leaves": "Skyroot Leaves",
+      "item.aetherreborn.healing_stone_charged": "Healing Stone"
     }
   },
   "workspaceSettings": {
