@@ -30,15 +30,14 @@ import java.util.Collections;
 
 import com.officiallysp.aether.world.dimension.AetherDimension;
 import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
-import com.officiallysp.aether.item.AmbrosiumShardItem;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
-public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
-	@ObjectHolder("aetherreborn:ambrosium_ore")
+public class ZaniteOreBlock extends AetherrebornModElements.ModElement {
+	@ObjectHolder("aetherreborn:zanite_ore")
 	public static final Block block = null;
-	public AmbrosiumOreBlock(AetherrebornModElements instance) {
-		super(instance, 41);
+	public ZaniteOreBlock(AetherrebornModElements instance) {
+		super(instance, 63);
 	}
 
 	@Override
@@ -48,8 +47,8 @@ public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1f, 15f).lightValue(0));
-			setRegistryName("ambrosium_ore");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("zanite_ore");
 		}
 
 		@Override
@@ -57,7 +56,7 @@ public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(AmbrosiumShardItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	@Override
@@ -74,12 +73,12 @@ public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("ambrosium_ore", "ambrosium_ore", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("zanite_ore", "zanite_ore", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == HolyStoneBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 0, 0, 64))));
+			}), block.getDefaultState(), 9)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 2, 2, 61))));
 		}
 	}
 }

@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "ambrosium_ore",
+    "texture": "zanite_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -20,17 +20,17 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Ambrosium Ore",
+    "name": "Zanite Ore",
     "specialInfo": [],
-    "hardness": 1.1,
-    "resistance": 15.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:AetherTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:AmbrosiumShard"
+      "value": ""
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -89,8 +89,8 @@
       }
     ],
     "frequencyPerChunks": 20,
-    "frequencyOnChunk": 17,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "frequencyOnChunk": 9,
+    "minGenerateHeight": 2,
+    "maxGenerateHeight": 61
   }
 }

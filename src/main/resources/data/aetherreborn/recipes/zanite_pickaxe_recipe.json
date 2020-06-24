@@ -1,0 +1,30 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "1": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "2": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "4": {
+      "item": "aetherreborn:skyroot_stick"
+    },
+    "7": {
+      "item": "aetherreborn:skyroot_stick"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:zanite_pickaxe",
+    "count": 1
+  }
+}

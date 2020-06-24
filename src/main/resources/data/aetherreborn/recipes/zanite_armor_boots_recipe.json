@@ -1,0 +1,26 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "2": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "3": {
+      "item": "aetherreborn:zanite_gem"
+    },
+    "5": {
+      "item": "aetherreborn:zanite_gem"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:zanite_armorboots",
+    "count": 1
+  }
+}
