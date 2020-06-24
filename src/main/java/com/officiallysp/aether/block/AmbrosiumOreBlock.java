@@ -79,7 +79,7 @@ public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
 				if (blockAt.getBlock() == HolyStoneBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 17)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 0, 0, 64))));
+			}), block.getDefaultState(), 12)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(15, 0, 0, 64))));
 		}
 	}
 }

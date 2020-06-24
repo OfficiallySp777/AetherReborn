@@ -30,6 +30,7 @@ import java.util.Collections;
 
 import com.officiallysp.aether.world.dimension.AetherDimension;
 import com.officiallysp.aether.itemgroup.AetherTabItemGroup;
+import com.officiallysp.aether.item.ZaniteGemItem;
 import com.officiallysp.aether.AetherrebornModElements;
 
 @AetherrebornModElements.ModElement.Tag
@@ -56,7 +57,7 @@ public class ZaniteOreBlock extends AetherrebornModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(ZaniteGemItem.block, (int) (1)));
 		}
 	}
 	@Override
@@ -78,7 +79,7 @@ public class ZaniteOreBlock extends AetherrebornModElements.ModElement {
 				if (blockAt.getBlock() == HolyStoneBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 9)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 2, 2, 61))));
+			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 2, 2, 61))));
 		}
 	}
 }

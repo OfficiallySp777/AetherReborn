@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "aetherreborn:blocks/mossy_holystone",
+    "particle": "aetherreborn:blocks/mossy_holystone"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "aetherreborn:blocks/mossy_holystone",
+    "top": "aetherreborn:blocks/mossy_holystone",
+    "side": "aetherreborn:blocks/mossy_holystone"
+  }
+}

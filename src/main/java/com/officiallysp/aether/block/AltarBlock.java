@@ -2,56 +2,31 @@
 package com.officiallysp.aether.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.tileentity.TileEntityType;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.network.play.server.SUpdateTileEntityPacket;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ChestContainer;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.IFluidState;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.WallBlock;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import javax.annotation.Nullable;
-
-import java.util.stream.IntStream;
 import java.util.List;
 import java.util.Collections;
 
@@ -62,11 +37,8 @@ import com.officiallysp.aether.AetherrebornModElements;
 public class AltarBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:altar")
 	public static final Block block = null;
-	@ObjectHolder("aetherreborn:altar")
-	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public AltarBlock(AetherrebornModElements instance) {
-		super(instance, 87);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		super(instance, 89);
 	}
 
 	@Override
@@ -75,20 +47,78 @@ public class AltarBlock extends AetherrebornModElements.ModElement {
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(AetherTabItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
-	@SubscribeEvent
-	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("altar"));
-	}
-
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends WallBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			setRegistryName("altar");
+		}
+
+		private boolean func_220113_a(BlockState state, boolean checkattach, Direction face) {
+			boolean flag = state.getBlock() instanceof WallBlock
+					|| state.getBlock() instanceof FenceGateBlock && FenceGateBlock.isParallel(state, face);
+			return !cannotAttach(state.getBlock()) && checkattach || flag;
+		}
+
+		@Override
+		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			IWorldReader iworldreader = context.getWorld();
+			BlockPos blockpos = context.getPos();
+			IFluidState ifluidstate = context.getWorld().getFluidState(context.getPos());
+			BlockPos blockpos1 = blockpos.north();
+			BlockPos blockpos2 = blockpos.east();
+			BlockPos blockpos3 = blockpos.south();
+			BlockPos blockpos4 = blockpos.west();
+			BlockState blockstate = iworldreader.getBlockState(blockpos1);
+			BlockState blockstate1 = iworldreader.getBlockState(blockpos2);
+			BlockState blockstate2 = iworldreader.getBlockState(blockpos3);
+			BlockState blockstate3 = iworldreader.getBlockState(blockpos4);
+			boolean flag = this.func_220113_a(blockstate, blockstate.isSolidSide(iworldreader, blockpos1, Direction.SOUTH), Direction.SOUTH);
+			boolean flag1 = this.func_220113_a(blockstate1, blockstate1.isSolidSide(iworldreader, blockpos2, Direction.WEST), Direction.WEST);
+			boolean flag2 = this.func_220113_a(blockstate2, blockstate2.isSolidSide(iworldreader, blockpos3, Direction.NORTH), Direction.NORTH);
+			boolean flag3 = this.func_220113_a(blockstate3, blockstate3.isSolidSide(iworldreader, blockpos4, Direction.EAST), Direction.EAST);
+			boolean flag4 = (!flag || flag1 || !flag2 || flag3) && (flag || !flag1 || flag2 || !flag3);
+			return this.getDefaultState().with(UP, Boolean.valueOf(flag4 || !iworldreader.isAirBlock(blockpos.up())))
+					.with(NORTH, Boolean.valueOf(flag)).with(EAST, Boolean.valueOf(flag1)).with(SOUTH, Boolean.valueOf(flag2))
+					.with(WEST, Boolean.valueOf(flag3)).with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));
+		}
+
+		@Override /**
+					 * Update the provided state given the provided neighbor facing and neighbor
+					 * state, returning a new state. For example, fences make their connections to
+					 * the passed in state if possible, and wet concrete powder immediately returns
+					 * its solidified counterpart. Note that this method should ideally consider
+					 * only the specific face passed in.
+					 */
+		public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
+				BlockPos facingPos) {
+			if (stateIn.get(WATERLOGGED)) {
+				worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+			}
+			if (facing == Direction.DOWN) {
+				return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+			} else {
+				Direction direction = facing.getOpposite();
+				boolean flag = facing == Direction.NORTH
+						? this.func_220113_a(facingState, facingState.isSolidSide(worldIn, facingPos, direction), direction)
+						: stateIn.get(NORTH);
+				boolean flag1 = facing == Direction.EAST
+						? this.func_220113_a(facingState, facingState.isSolidSide(worldIn, facingPos, direction), direction)
+						: stateIn.get(EAST);
+				boolean flag2 = facing == Direction.SOUTH
+						? this.func_220113_a(facingState, facingState.isSolidSide(worldIn, facingPos, direction), direction)
+						: stateIn.get(SOUTH);
+				boolean flag3 = facing == Direction.WEST
+						? this.func_220113_a(facingState, facingState.isSolidSide(worldIn, facingPos, direction), direction)
+						: stateIn.get(WEST);
+				boolean flag4 = (!flag || flag1 || !flag2 || flag3) && (flag || !flag1 || flag2 || !flag3);
+				return stateIn.with(UP, Boolean.valueOf(flag4 || !worldIn.isAirBlock(currentPos.up()))).with(NORTH, Boolean.valueOf(flag))
+						.with(EAST, Boolean.valueOf(flag1)).with(SOUTH, Boolean.valueOf(flag2)).with(WEST, Boolean.valueOf(flag3));
+			}
 		}
 
 		@Override
@@ -107,182 +137,6 @@ public class AltarBlock extends AetherrebornModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(state, world, pos, entity, hand, hit);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			return ActionResultType.SUCCESS;
-		}
-
-		@Override
-		public INamedContainerProvider getContainer(BlockState state, World worldIn, BlockPos pos) {
-			TileEntity tileEntity = worldIn.getTileEntity(pos);
-			return tileEntity instanceof INamedContainerProvider ? (INamedContainerProvider) tileEntity : null;
-		}
-
-		@Override
-		public boolean hasTileEntity(BlockState state) {
-			return true;
-		}
-
-		@Override
-		public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-			return new CustomTileEntity();
-		}
-
-		@Override
-		public boolean eventReceived(BlockState state, World world, BlockPos pos, int eventID, int eventParam) {
-			super.eventReceived(state, world, pos, eventID, eventParam);
-			TileEntity tileentity = world.getTileEntity(pos);
-			return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
-		}
-
-		@Override
-		public void onReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean isMoving) {
-			if (state.getBlock() != newState.getBlock()) {
-				TileEntity tileentity = world.getTileEntity(pos);
-				if (tileentity instanceof CustomTileEntity) {
-					InventoryHelper.dropInventoryItems(world, pos, (CustomTileEntity) tileentity);
-					world.updateComparatorOutputLevel(pos, this);
-				}
-				super.onReplaced(state, world, pos, newState, isMoving);
-			}
-		}
-
-		@Override
-		public boolean hasComparatorInputOverride(BlockState state) {
-			return true;
-		}
-
-		@Override
-		public int getComparatorInputOverride(BlockState blockState, World world, BlockPos pos) {
-			TileEntity tileentity = world.getTileEntity(pos);
-			if (tileentity instanceof CustomTileEntity)
-				return Container.calcRedstoneFromInventory((CustomTileEntity) tileentity);
-			else
-				return 0;
-		}
-	}
-
-	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
-		protected CustomTileEntity() {
-			super(tileEntityType);
-		}
-
-		@Override
-		public void read(CompoundNBT compound) {
-			super.read(compound);
-			if (!this.checkLootAndRead(compound)) {
-				this.stacks = NonNullList.withSize(this.getSizeInventory(), ItemStack.EMPTY);
-			}
-			ItemStackHelper.loadAllItems(compound, this.stacks);
-		}
-
-		@Override
-		public CompoundNBT write(CompoundNBT compound) {
-			super.write(compound);
-			if (!this.checkLootAndWrite(compound)) {
-				ItemStackHelper.saveAllItems(compound, this.stacks);
-			}
-			return compound;
-		}
-
-		@Override
-		public SUpdateTileEntityPacket getUpdatePacket() {
-			return new SUpdateTileEntityPacket(this.pos, 0, this.getUpdateTag());
-		}
-
-		@Override
-		public CompoundNBT getUpdateTag() {
-			return this.write(new CompoundNBT());
-		}
-
-		@Override
-		public void onDataPacket(NetworkManager net, SUpdateTileEntityPacket pkt) {
-			this.read(pkt.getNbtCompound());
-		}
-
-		@Override
-		public int getSizeInventory() {
-			return stacks.size();
-		}
-
-		@Override
-		public boolean isEmpty() {
-			for (ItemStack itemstack : this.stacks)
-				if (!itemstack.isEmpty())
-					return false;
-			return true;
-		}
-
-		@Override
-		public ITextComponent getDefaultName() {
-			return new StringTextComponent("altar");
-		}
-
-		@Override
-		public int getInventoryStackLimit() {
-			return 16;
-		}
-
-		@Override
-		public Container createMenu(int id, PlayerInventory player) {
-			return ChestContainer.createGeneric9X3(id, player, this);
-		}
-
-		@Override
-		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Altar");
-		}
-
-		@Override
-		protected NonNullList<ItemStack> getItems() {
-			return this.stacks;
-		}
-
-		@Override
-		protected void setItems(NonNullList<ItemStack> stacks) {
-			this.stacks = stacks;
-		}
-
-		@Override
-		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			return true;
-		}
-
-		@Override
-		public int[] getSlotsForFace(Direction side) {
-			return IntStream.range(0, this.getSizeInventory()).toArray();
-		}
-
-		@Override
-		public boolean canInsertItem(int index, ItemStack stack, @Nullable Direction direction) {
-			return this.isItemValidForSlot(index, stack);
-		}
-
-		@Override
-		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
-			return true;
-		}
-		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		@Override
-		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
-			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
-				return handlers[facing.ordinal()].cast();
-			return super.getCapability(capability, facing);
-		}
-
-		@Override
-		public void remove() {
-			super.remove();
-			for (LazyOptional<? extends IItemHandler> handler : handlers)
-				handler.invalidate();
 		}
 	}
 }

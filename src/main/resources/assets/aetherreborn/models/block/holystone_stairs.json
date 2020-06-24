@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "aetherreborn:blocks/holystone",
+    "top": "aetherreborn:blocks/holystone",
+    "side": "aetherreborn:blocks/holystone"
+  }
+}

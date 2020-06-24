@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aetherreborn:block/holystone_slab"
+    },
+    "type=top": {
+      "model": "aetherreborn:block/holystone_slab_top"
+    },
+    "type=double": {
+      "model": "aetherreborn:block/holystone_slab_full"
+    }
+  }
+}

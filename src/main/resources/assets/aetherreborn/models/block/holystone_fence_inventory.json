@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "aetherreborn:blocks/holystone",
+    "particle": "aetherreborn:blocks/holystone"
+  }
+}

@@ -3,14 +3,15 @@
   "_type": "block",
   "definition": {
     "texture": "altar",
-    "textureTop": "",
+    "textureTop": "altar",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "altar:default",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
+    "blockBase": "Wall",
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -57,7 +58,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -70,15 +71,20 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": true,
+    "hasInventory": false,
+    "guiBoundTo": "AltarGUI",
+    "openGUIOnRightClick": false,
     "inventorySize": 3,
-    "inventoryStackSize": 16,
+    "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      2
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1
+    ],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

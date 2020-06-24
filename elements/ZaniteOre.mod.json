@@ -30,7 +30,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ZaniteGem"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -88,8 +88,8 @@
         "value": "CUSTOM:HolyStone"
       }
     ],
-    "frequencyPerChunks": 20,
-    "frequencyOnChunk": 9,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 8,
     "minGenerateHeight": 2,
     "maxGenerateHeight": 61
   }
