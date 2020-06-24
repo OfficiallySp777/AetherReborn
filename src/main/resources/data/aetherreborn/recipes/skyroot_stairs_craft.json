@@ -1,0 +1,33 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "3": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "4": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "6": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "7": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "8": {
+      "item": "aetherreborn:skyroot_plank"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:skyroot_stairs",
+    "count": 4
+  }
+}

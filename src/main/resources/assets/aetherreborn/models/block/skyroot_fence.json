@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "aetherreborn:blocks/skyroot_planks",
+    "particle": "aetherreborn:blocks/skyroot_planks"
+  }
+}

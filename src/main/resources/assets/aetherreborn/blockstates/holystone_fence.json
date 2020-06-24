@@ -1,6 +1,9 @@
 {
   "multipart": [
     {
+      "when": {
+        "up": "true"
+      },
       "apply": {
         "model": "aetherreborn:block/holystone_fence_post"
       }

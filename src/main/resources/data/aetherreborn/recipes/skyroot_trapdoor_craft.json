@@ -1,0 +1,32 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "1": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "2": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "3": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "4": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "5": {
+      "item": "aetherreborn:skyroot_plank"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:skyroot_trapdoor",
+    "count": 2
+  }
+}

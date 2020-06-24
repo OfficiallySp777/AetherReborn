@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aetherreborn:blocks/skyroot_planks",
+    "particle": "aetherreborn:blocks/skyroot_planks"
+  }
+}

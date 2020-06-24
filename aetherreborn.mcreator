@@ -851,6 +851,132 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "holystone_slab"
+    },
+    {
+      "name": "SkyrootFence",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_fence"
+    },
+    {
+      "name": "SkyrootTrapdoor",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_trapdoor"
+    },
+    {
+      "name": "SkyrootSlab",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_slab"
+    },
+    {
+      "name": "SkyrootStairs",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_stairs"
+    },
+    {
+      "name": "MossyHolystoneStairsCraft",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_holystone_stairs_craft"
+    },
+    {
+      "name": "MossyHolystoneFenceCraft",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_holystone_fence_craft"
+    },
+    {
+      "name": "MossyHolystoneSlabCraft",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mossy_holystone_slab_craft"
+    },
+    {
+      "name": "HolystoneFenceCraft",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holystone_fence_craft"
+    },
+    {
+      "name": "HolystoneStairsCraft",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holystone_stairs_craft"
+    },
+    {
+      "name": "HolystoneSlabCraft",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "holystone_slab_craft"
+    },
+    {
+      "name": "SkyrootFenceCraft",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_fence_craft"
+    },
+    {
+      "name": "SkyrootTrapdoorCraft",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_trapdoor_craft"
+    },
+    {
+      "name": "SkyrootSlabCraft",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_slab_craft"
+    },
+    {
+      "name": "SkyrootStairsCraft",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skyroot_stairs_craft"
     }
   ],
   "variable_elements": [],
@@ -876,6 +1002,7 @@
       "item.aetherreborn.zanite_armorlegs": "Zanite Leggings",
       "item.aetherreborn.zanite_armorbody": "Zanite Chestplate",
       "block.aetherreborn.gravitite_ore_block": "Enchanted Gravitite",
+      "block.aetherreborn.skyroot_trapdoor": "Skyroot Trapdoor",
       "item.aetherreborn.gravitite_armorlegs": "Gravitite Leggings",
       "block.hmmmm.aether_dirt": "Aether Dirt",
       "item.aether_reborn.aether": "Enchanted Water",
@@ -884,6 +1011,7 @@
       "item.aether_reborn.skyroot_pickaxe": "Skyroot Pickaxe",
       "item.aetherreborn.skyroot_shovel": "Skyroot Shovel",
       "item.aetherreborn.aether": "Enchanted Water",
+      "block.aetherreborn.skyroot_slab": "Skyroot Slab",
       "block.hmmmm.skyroot_plank": "Skyroot Plank",
       "item.aetherreborn.zanite_gem": "Zanite Gem",
       "item.aetherreborn.skyroot_bucket": "Skyroot Bucket",
@@ -891,6 +1019,7 @@
       "block.aetherreborn.skyroot_leaves": "Skyroot Leaves",
       "item.aetherreborn.holy_shovel": "Holystone Shovel",
       "item.aetherreborn.ambrosium_shard": "Ambrosium Shard",
+      "block.aetherreborn.skyroot_fence": "Skyroot Fence",
       "block.aetherreborn.skyroot_plank": "Skyroot Plank",
       "item.aetherreborn.holy_pickaxe": "Holystone Pickaxe",
       "item.aetherreborn.zanite_armorhelmet": "Zanite Helmet",
@@ -924,6 +1053,7 @@
       "itemGroup.tabaether_tab": "The Aether",
       "item.aetherreborn.zanite_axe": "Zanite Axe",
       "block.aetherreborn.holystone_stairs": "Holystone Stairs",
+      "block.aetherreborn.skyroot_stairs": "Skyroot Stairs",
       "block.hmmmm.skyroot_leaves": "Skyroot Leaves",
       "block.aether_reborn.skyroot_plank": "Skyroot Plank",
       "block.aetherreborn.aether_dirt": "Aether Dirt",

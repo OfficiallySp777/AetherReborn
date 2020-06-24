@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "aetherreborn:blocks/skyroot_planks",
+    "top": "aetherreborn:blocks/skyroot_planks",
+    "side": "aetherreborn:blocks/skyroot_planks"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:mossy_holystone"
+    },
+    "1": {
+      "item": "aetherreborn:mossy_holystone"
+    },
+    "2": {
+      "item": "aetherreborn:mossy_holystone"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:mossy_holystone_slab",
+    "count": 6
+  }
+}

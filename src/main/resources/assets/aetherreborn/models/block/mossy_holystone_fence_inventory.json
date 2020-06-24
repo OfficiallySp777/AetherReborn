@@ -1,7 +1,7 @@
 {
-  "parent": "block/fence_inventory",
+  "parent": "block/wall_inventory",
   "textures": {
-    "texture": "aetherreborn:blocks/mossy_holystone",
+    "wall": "aetherreborn:blocks/mossy_holystone",
     "particle": "aetherreborn:blocks/mossy_holystone"
   }
 }

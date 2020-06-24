@@ -1,0 +1,22 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "1": {
+      "item": "aetherreborn:skyroot_plank"
+    },
+    "2": {
+      "item": "aetherreborn:skyroot_plank"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:skyroot_slab",
+    "count": 6
+  }
+}

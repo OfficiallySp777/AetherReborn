@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MossyHolystone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MossyHolystone"
+      },
+      {
+        "value": "CUSTOM:MossyHolystone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MossyHolystone"
+      },
+      {
+        "value": "CUSTOM:MossyHolystone"
+      },
+      {
+        "value": "CUSTOM:MossyHolystone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MossyHolystoneStairs"
+    },
+    "name": "mossy_holystone_stairs_craft",
+    "namespace": "mod"
+  }
+}

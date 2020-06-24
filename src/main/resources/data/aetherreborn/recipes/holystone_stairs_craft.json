@@ -1,0 +1,33 @@
+{
+  "group": "aetherreborn",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "3": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "4": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "6": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "7": {
+      "item": "aetherreborn:holy_stone"
+    },
+    "8": {
+      "item": "aetherreborn:holy_stone"
+    }
+  },
+  "result": {
+    "item": "aetherreborn:holystone_stairs",
+    "count": 4
+  }
+}
