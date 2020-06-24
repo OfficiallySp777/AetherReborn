@@ -51,10 +51,10 @@ public class AetherrebornModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public AetherrebornModElements() {
-		sounds.put(new ResourceLocation("aetherreborn", "travel"), new net.minecraft.util.SoundEvent(new ResourceLocation("aetherreborn", "travel")));
+		sounds.put(new ResourceLocation("aetherreborn", "hum"), new net.minecraft.util.SoundEvent(new ResourceLocation("aetherreborn", "hum")));
 		sounds.put(new ResourceLocation("aetherreborn", "trigger"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("aetherreborn", "trigger")));
-		sounds.put(new ResourceLocation("aetherreborn", "hum"), new net.minecraft.util.SoundEvent(new ResourceLocation("aetherreborn", "hum")));
+		sounds.put(new ResourceLocation("aetherreborn", "travel"), new net.minecraft.util.SoundEvent(new ResourceLocation("aetherreborn", "travel")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("aetherreborn").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

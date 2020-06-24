@@ -86,9 +86,7 @@ import java.util.Arrays;
 
 import java.lang.reflect.Method;
 
-import com.officiallysp.aether.procedures.AetherPlayerLeavesDimensionProcedure;
 import com.officiallysp.aether.procedures.AetherPlayerEntersDimensionProcedure;
-import com.officiallysp.aether.procedures.AetherOnPortalTickUpdateProcedure;
 import com.officiallysp.aether.item.AetherItem;
 import com.officiallysp.aether.block.HolyStoneBlock;
 import com.officiallysp.aether.AetherrebornModElements;
@@ -149,17 +147,6 @@ public class AetherDimension extends AetherrebornModElements.ModElement {
 
 		@Override
 		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				AetherOnPortalTickUpdateProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		public void portalSpawn(World world, BlockPos pos) {
@@ -259,11 +246,11 @@ public class AetherDimension extends AetherrebornModElements.ModElement {
 					pz = pos.getZ() + 0.5 + 0.25 * j;
 					vz = random.nextFloat() * 2 * j;
 				}
-				world.addParticle(ParticleTypes.PORTAL, px, py, pz, vx, vy, vz);
+				world.addParticle(ParticleTypes.TOTEM_OF_UNDYING, px, py, pz, vx, vy, vz);
 			}
 			if (random.nextInt(110) == 0)
 				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("block.portal.ambient"))),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("aetherreborn:hum"))),
 						SoundCategory.BLOCKS, 0.5f, random.nextFloat() * 0.4F + 0.8F, false);
 		}
 
@@ -731,16 +718,6 @@ public class AetherDimension extends AetherrebornModElements.ModElement {
 		int x = (int) entity.getPosX();
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
-		if (event.getFrom() == type) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				AetherPlayerLeavesDimensionProcedure.executeProcedure($_dependencies);
-			}
-		}
 		if (event.getTo() == type) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();

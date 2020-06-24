@@ -1,15 +1,15 @@
 {
-  "travel": {
-    "category": "neutral",
+  "hum": {
+    "category": "ambient",
     "sounds": [
       {
-        "name": "aetherreborn:travel",
+        "name": "aetherreborn:hum",
         "stream": false
       }
     ]
   },
   "trigger": {
-    "category": "neutral",
+    "category": "block",
     "sounds": [
       {
         "name": "aetherreborn:trigger",
@@ -17,11 +17,11 @@
       }
     ]
   },
-  "hum": {
+  "travel": {
     "category": "ambient",
     "sounds": [
       {
-        "name": "aetherreborn:hum",
+        "name": "aetherreborn:travel",
         "stream": false
       }
     ]

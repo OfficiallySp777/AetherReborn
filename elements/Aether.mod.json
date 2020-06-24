@@ -6,11 +6,11 @@
       "value": "Blocks.GLOWSTONE"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "TOTEM"
     },
     "portalLuminance": 0.0,
     "portalSound": {
-      "value": "block.portal.ambient"
+      "value": "CUSTOM:hum"
     },
     "igniterName": "Enchanted Water",
     "igniterTab": {
@@ -56,14 +56,8 @@
     "whenPortaTriggerlUsed": {
       "name": "AetherPortalTriggerUsed"
     },
-    "onPortalTickUpdate": {
-      "name": "AetherOnPortalTickUpdate"
-    },
     "onPlayerEntersDimension": {
       "name": "AetherPlayerEntersDimension"
-    },
-    "onPlayerLeavesDimension": {
-      "name": "AetherPlayerLeavesDimension"
     }
   }
 }
