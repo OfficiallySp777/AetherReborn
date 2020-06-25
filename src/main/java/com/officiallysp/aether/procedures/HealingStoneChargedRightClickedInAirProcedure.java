@@ -26,16 +26,16 @@ public class HealingStoneChargedRightClickedInAirProcedure extends AetherrebornM
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 30, (int) 2));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 138000, (int) 1));
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 30, (int) 2));
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).inventory
-					.clearMatchingItems(p -> new ItemStack(HealingStoneChargedItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 138000, (int) 1));
 		if (entity instanceof PlayerEntity) {
 			ItemStack _setstack = new ItemStack(HealingStoneDischargedItem.block, (int) (1));
 			_setstack.setCount((int) 1);
 			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).inventory
+					.clearMatchingItems(p -> new ItemStack(HealingStoneChargedItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
 	}
 }

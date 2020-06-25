@@ -35,7 +35,7 @@ public class MossyHolystoneStairsBlock extends AetherrebornModElements.ModElemen
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(new Block(Block.Properties.create(Material.ROCK)).getDefaultState(),
-					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("mossy_holystone_stairs");
 		}
 

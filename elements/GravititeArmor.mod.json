@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "gravitite_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:AetherTab"
     },
     "armorTextureFile": "gravitite_",
     "helmetName": "Gravitite Helmet",
@@ -32,13 +32,13 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 15,
-    "damageValueHelmet": 2,
-    "damageValueBody": 5,
+    "maxDamage": 33,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
     "damageValueLeggings": 6,
-    "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 0.0,
+    "damageValueBoots": 3,
+    "enchantability": 10,
+    "toughness": 2.0,
     "equipSound": {
       "value": ""
     },

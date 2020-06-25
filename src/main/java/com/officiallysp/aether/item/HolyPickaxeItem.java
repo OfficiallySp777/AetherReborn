@@ -29,11 +29,11 @@ public class HolyPickaxeItem extends AetherrebornModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 250;
+				return 131;
 			}
 
 			public float getEfficiency() {
-				return 6f;
+				return 4f;
 			}
 
 			public float getAttackDamage() {
@@ -41,7 +41,7 @@ public class HolyPickaxeItem extends AetherrebornModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 1;
 			}
 
 			public int getEnchantability() {

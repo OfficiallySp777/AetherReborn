@@ -23,11 +23,11 @@ public class SkyrootShovelItem extends AetherrebornModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ShovelItem(new IItemTier() {
 			public int getMaxUses() {
-				return 250;
+				return 59;
 			}
 
 			public float getEfficiency() {
-				return 6f;
+				return 2f;
 			}
 
 			public float getAttackDamage() {
@@ -35,11 +35,11 @@ public class SkyrootShovelItem extends AetherrebornModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 0;
 			}
 
 			public int getEnchantability() {
-				return 14;
+				return 15;
 			}
 
 			public Ingredient getRepairMaterial() {

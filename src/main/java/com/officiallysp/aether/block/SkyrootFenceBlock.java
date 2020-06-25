@@ -49,7 +49,7 @@ public class SkyrootFenceBlock extends AetherrebornModElements.ModElement {
 	}
 	public static class CustomBlock extends FenceBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			setRegistryName("skyroot_fence");
 		}
 

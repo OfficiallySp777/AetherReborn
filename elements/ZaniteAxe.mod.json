@@ -8,7 +8,7 @@
     "name": "Zanite Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AetherTab"
     },
     "toolType": "Axe",
     "harvestLevel": 2,

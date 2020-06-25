@@ -35,7 +35,7 @@ public class MossyHolystoneSlabBlock extends AetherrebornModElements.ModElement 
 	}
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("mossy_holystone_slab");
 		}
 

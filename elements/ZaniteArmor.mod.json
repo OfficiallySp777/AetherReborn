@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "zanite_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:AetherTab"
     },
     "armorTextureFile": "zanite_",
     "helmetName": "Zanite Helmet",
@@ -34,11 +34,11 @@
     "bootsModelTexture": "From armor",
     "maxDamage": 15,
     "damageValueHelmet": 2,
-    "damageValueBody": 5,
-    "damageValueLeggings": 6,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
     "damageValueBoots": 2,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 1.0,
     "equipSound": {
       "value": ""
     },

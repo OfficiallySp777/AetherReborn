@@ -1,7 +1,7 @@
 {
-  "parent": "block/template_wall_side",
+  "parent": "block/cross",
   "textures": {
-    "wall": "aetherreborn:blocks/altar",
+    "cross": "aetherreborn:blocks/altar",
     "particle": "aetherreborn:blocks/altar"
   }
 }

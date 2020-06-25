@@ -1,51 +1,7 @@
 {
-  "multipart": [
-    {
-      "when": {
-        "up": "true"
-      },
-      "apply": {
-        "model": "aetherreborn:block/altar_post"
-      }
-    },
-    {
-      "when": {
-        "north": "true"
-      },
-      "apply": {
-        "model": "aetherreborn:block/altar",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "true"
-      },
-      "apply": {
-        "model": "aetherreborn:block/altar",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "true"
-      },
-      "apply": {
-        "model": "aetherreborn:block/altar",
-        "y": 270,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "true"
-      },
-      "apply": {
-        "model": "aetherreborn:block/altar",
-        "y": 90,
-        "uvlock": true
-      }
+  "variants": {
+    "": {
+      "model": "aetherreborn:block/altar"
     }
-  ]
+  }
 }

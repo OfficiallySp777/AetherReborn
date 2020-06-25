@@ -11,12 +11,12 @@
       "value": "CUSTOM:AetherTab"
     },
     "toolType": "Axe",
-    "harvestLevel": 2,
-    "efficiency": 6.0,
+    "harvestLevel": 0,
+    "efficiency": 2.0,
     "attackSpeed": 1.0,
-    "enchantability": 14,
+    "enchantability": 15,
     "damageVsEntity": 6.0,
-    "usageCount": 250,
+    "usageCount": 59,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": []

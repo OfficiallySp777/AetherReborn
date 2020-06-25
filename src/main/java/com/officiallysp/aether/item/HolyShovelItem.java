@@ -33,7 +33,7 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 6f;
+				return 4f;
 			}
 
 			public float getAttackDamage() {
@@ -41,11 +41,11 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 1;
 			}
 
 			public int getEnchantability() {
-				return 14;
+				return 5;
 			}
 
 			public Ingredient getRepairMaterial() {

@@ -66,7 +66,7 @@ public class AmbrosiumTorchBlock extends AetherrebornModElements.ModElement {
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			return VoxelShapes.create(0.4D, 0.4D, 0.4D, 0.6D, 0.6D, 0.6D);
+			return VoxelShapes.create(0.4D, 0D, 0.4D, 0.6D, 0.5D, 0.6D);
 		}
 
 		@Override
