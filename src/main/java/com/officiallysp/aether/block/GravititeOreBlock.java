@@ -38,7 +38,7 @@ public class GravititeOreBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:gravitite_ore")
 	public static final Block block = null;
 	public GravititeOreBlock(AetherrebornModElements instance) {
-		super(instance, 64);
+		super(instance, 45);
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class HealingStoneChargedItem extends AetherrebornModElements.ModElement 
 	@ObjectHolder("aetherreborn:healing_stone_charged")
 	public static final Item block = null;
 	public HealingStoneChargedItem(AetherrebornModElements instance) {
-		super(instance, 85);
+		super(instance, 46);
 	}
 
 	@Override

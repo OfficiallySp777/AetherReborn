@@ -24,7 +24,7 @@ public class SkyrootStairsBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_stairs")
 	public static final Block block = null;
 	public SkyrootStairsBlock(AetherrebornModElements instance) {
-		super(instance, 100);
+		super(instance, 7);
 	}
 
 	@Override

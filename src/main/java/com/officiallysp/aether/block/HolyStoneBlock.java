@@ -23,7 +23,7 @@ public class HolyStoneBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_stone")
 	public static final Block block = null;
 	public HolyStoneBlock(AetherrebornModElements instance) {
-		super(instance, 5);
+		super(instance, 12);
 	}
 
 	@Override

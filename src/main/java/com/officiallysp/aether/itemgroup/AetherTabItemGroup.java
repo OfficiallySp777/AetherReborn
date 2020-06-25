@@ -13,7 +13,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class AetherTabItemGroup extends AetherrebornModElements.ModElement {
 	public AetherTabItemGroup(AetherrebornModElements instance) {
-		super(instance, 37);
+		super(instance, 66);
 	}
 
 	@Override

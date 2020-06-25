@@ -16,7 +16,7 @@ public class SkyrootSwordItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_sword")
 	public static final Item block = null;
 	public SkyrootSwordItem(AetherrebornModElements instance) {
-		super(instance, 18);
+		super(instance, 24);
 	}
 
 	@Override

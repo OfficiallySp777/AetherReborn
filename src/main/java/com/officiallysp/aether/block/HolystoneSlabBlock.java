@@ -25,7 +25,7 @@ public class HolystoneSlabBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holystone_slab")
 	public static final Block block = null;
 	public HolystoneSlabBlock(AetherrebornModElements instance) {
-		super(instance, 96);
+		super(instance, 15);
 	}
 
 	@Override

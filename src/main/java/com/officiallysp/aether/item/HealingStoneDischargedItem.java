@@ -15,7 +15,7 @@ public class HealingStoneDischargedItem extends AetherrebornModElements.ModEleme
 	@ObjectHolder("aetherreborn:healing_stone_discharged")
 	public static final Item block = null;
 	public HealingStoneDischargedItem(AetherrebornModElements instance) {
-		super(instance, 86);
+		super(instance, 47);
 	}
 
 	@Override

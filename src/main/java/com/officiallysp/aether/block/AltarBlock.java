@@ -49,7 +49,7 @@ public class AltarBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:altar")
 	public static final Block block = null;
 	public AltarBlock(AetherrebornModElements instance) {
-		super(instance, 89);
+		super(instance, 48);
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public class MossyHolystoneStairsBlock extends AetherrebornModElements.ModElemen
 	@ObjectHolder("aetherreborn:mossy_holystone_stairs")
 	public static final Block block = null;
 	public MossyHolystoneStairsBlock(AetherrebornModElements instance) {
-		super(instance, 91);
+		super(instance, 17);
 	}
 
 	@Override

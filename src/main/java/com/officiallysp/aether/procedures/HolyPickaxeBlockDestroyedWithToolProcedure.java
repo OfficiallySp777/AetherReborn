@@ -12,7 +12,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class HolyPickaxeBlockDestroyedWithToolProcedure extends AetherrebornModElements.ModElement {
 	public HolyPickaxeBlockDestroyedWithToolProcedure(AetherrebornModElements instance) {
-		super(instance, 32);
+		super(instance, 62);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -15,7 +15,7 @@ public class SkyrootStickItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_stick")
 	public static final Item block = null;
 	public SkyrootStickItem(AetherrebornModElements instance) {
-		super(instance, 42);
+		super(instance, 9);
 	}
 
 	@Override

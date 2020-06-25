@@ -16,7 +16,7 @@ public class GravititePickaxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:gravitite_pickaxe")
 	public static final Item block = null;
 	public GravititePickaxeItem(AetherrebornModElements instance) {
-		super(instance, 70);
+		super(instance, 36);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ public class MossyHolystoneFenceBlock extends AetherrebornModElements.ModElement
 	@ObjectHolder("aetherreborn:mossy_holystone_fence")
 	public static final Block block = null;
 	public MossyHolystoneFenceBlock(AetherrebornModElements instance) {
-		super(instance, 92);
+		super(instance, 18);
 	}
 
 	@Override

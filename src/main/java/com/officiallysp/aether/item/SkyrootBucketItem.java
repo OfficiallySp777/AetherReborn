@@ -15,7 +15,7 @@ public class SkyrootBucketItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_bucket")
 	public static final Item block = null;
 	public SkyrootBucketItem(AetherrebornModElements instance) {
-		super(instance, 9);
+		super(instance, 11);
 	}
 
 	@Override

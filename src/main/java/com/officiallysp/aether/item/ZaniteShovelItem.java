@@ -16,7 +16,7 @@ public class ZaniteShovelItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_shovel")
 	public static final Item block = null;
 	public ZaniteShovelItem(AetherrebornModElements instance) {
-		super(instance, 52);
+		super(instance, 33);
 	}
 
 	@Override

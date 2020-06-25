@@ -22,7 +22,7 @@ public class SkyrootPickaxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_pickaxe")
 	public static final Item block = null;
 	public SkyrootPickaxeItem(AetherrebornModElements instance) {
-		super(instance, 12);
+		super(instance, 21);
 	}
 
 	@Override

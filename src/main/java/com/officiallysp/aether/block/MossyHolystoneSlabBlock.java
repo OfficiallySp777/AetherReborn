@@ -25,7 +25,7 @@ public class MossyHolystoneSlabBlock extends AetherrebornModElements.ModElement 
 	@ObjectHolder("aetherreborn:mossy_holystone_slab")
 	public static final Block block = null;
 	public MossyHolystoneSlabBlock(AetherrebornModElements instance) {
-		super(instance, 95);
+		super(instance, 19);
 	}
 
 	@Override

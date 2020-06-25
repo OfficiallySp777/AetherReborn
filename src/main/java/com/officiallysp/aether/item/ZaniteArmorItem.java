@@ -29,7 +29,7 @@ public class ZaniteArmorItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_armorboots")
 	public static final Item boots = null;
 	public ZaniteArmorItem(AetherrebornModElements instance) {
-		super(instance, 58);
+		super(instance, 34);
 	}
 
 	@Override

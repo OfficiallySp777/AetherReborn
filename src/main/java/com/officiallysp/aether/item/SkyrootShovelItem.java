@@ -16,7 +16,7 @@ public class SkyrootShovelItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_shovel")
 	public static final Item block = null;
 	public SkyrootShovelItem(AetherrebornModElements instance) {
-		super(instance, 14);
+		super(instance, 23);
 	}
 
 	@Override

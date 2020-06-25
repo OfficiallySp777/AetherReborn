@@ -24,7 +24,7 @@ public class SkyrootLeavesBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_leaves")
 	public static final Block block = null;
 	public SkyrootLeavesBlock(AetherrebornModElements instance) {
-		super(instance, 7);
+		super(instance, 20);
 	}
 
 	@Override

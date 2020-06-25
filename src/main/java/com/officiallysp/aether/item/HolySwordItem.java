@@ -20,7 +20,7 @@ public class HolySwordItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_sword")
 	public static final Item block = null;
 	public HolySwordItem(AetherrebornModElements instance) {
-		super(instance, 19);
+		super(instance, 28);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class SkyrootTrapdoorBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_trapdoor")
 	public static final Block block = null;
 	public SkyrootTrapdoorBlock(AetherrebornModElements instance) {
-		super(instance, 98);
+		super(instance, 5);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class MossyHolystoneBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:mossy_holystone")
 	public static final Block block = null;
 	public MossyHolystoneBlock(AetherrebornModElements instance) {
-		super(instance, 90);
+		super(instance, 16);
 	}
 
 	@Override

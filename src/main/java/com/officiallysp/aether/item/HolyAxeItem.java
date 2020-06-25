@@ -16,7 +16,7 @@ public class HolyAxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_axe")
 	public static final Item block = null;
 	public HolyAxeItem(AetherrebornModElements instance) {
-		super(instance, 16);
+		super(instance, 26);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class AmbrosiumTorchBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:ambrosium_torch")
 	public static final Block block = null;
 	public AmbrosiumTorchBlock(AetherrebornModElements instance) {
-		super(instance, 44);
+		super(instance, 10);
 	}
 
 	@Override

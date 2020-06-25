@@ -25,7 +25,7 @@ public class SkyrootSlabBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_slab")
 	public static final Block block = null;
 	public SkyrootSlabBlock(AetherrebornModElements instance) {
-		super(instance, 99);
+		super(instance, 6);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class GravititeAxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:gravitite_axe")
 	public static final Item block = null;
 	public GravititeAxeItem(AetherrebornModElements instance) {
-		super(instance, 71);
+		super(instance, 37);
 	}
 
 	@Override

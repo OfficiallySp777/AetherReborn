@@ -12,7 +12,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class AetherPortalTriggerUsedProcedure extends AetherrebornModElements.ModElement {
 	public AetherPortalTriggerUsedProcedure(AetherrebornModElements instance) {
-		super(instance, 45);
+		super(instance, 71);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -29,7 +29,7 @@ public class GravititeArmorItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:gravitite_armorboots")
 	public static final Item boots = null;
 	public GravititeArmorItem(AetherrebornModElements instance) {
-		super(instance, 80);
+		super(instance, 40);
 	}
 
 	@Override

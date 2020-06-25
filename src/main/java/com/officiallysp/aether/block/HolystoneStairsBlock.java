@@ -24,7 +24,7 @@ public class HolystoneStairsBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holystone_stairs")
 	public static final Block block = null;
 	public HolystoneStairsBlock(AetherrebornModElements instance) {
-		super(instance, 94);
+		super(instance, 14);
 	}
 
 	@Override

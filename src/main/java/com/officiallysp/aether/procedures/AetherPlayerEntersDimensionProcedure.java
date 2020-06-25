@@ -12,7 +12,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class AetherPlayerEntersDimensionProcedure extends AetherrebornModElements.ModElement {
 	public AetherPlayerEntersDimensionProcedure(AetherrebornModElements instance) {
-		super(instance, 47);
+		super(instance, 72);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

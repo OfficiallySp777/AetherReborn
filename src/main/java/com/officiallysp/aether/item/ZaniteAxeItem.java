@@ -16,7 +16,7 @@ public class ZaniteAxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_axe")
 	public static final Item block = null;
 	public ZaniteAxeItem(AetherrebornModElements instance) {
-		super(instance, 50);
+		super(instance, 31);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class AmbrosiumShardItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:ambrosium_shard")
 	public static final Item block = null;
 	public AmbrosiumShardItem(AetherrebornModElements instance) {
-		super(instance, 10);
+		super(instance, 41);
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class AmbrosiumChunkItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:ambrosium_chunk")
 	public static final Item block = null;
 	public AmbrosiumChunkItem(AetherrebornModElements instance) {
-		super(instance, 11);
+		super(instance, 42);
 	}
 
 	@Override

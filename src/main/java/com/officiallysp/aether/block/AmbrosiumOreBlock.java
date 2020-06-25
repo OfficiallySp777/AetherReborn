@@ -38,7 +38,7 @@ public class AmbrosiumOreBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:ambrosium_ore")
 	public static final Block block = null;
 	public AmbrosiumOreBlock(AetherrebornModElements instance) {
-		super(instance, 41);
+		super(instance, 43);
 	}
 
 	@Override

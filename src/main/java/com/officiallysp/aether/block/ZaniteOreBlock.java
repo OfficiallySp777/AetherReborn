@@ -38,7 +38,7 @@ public class ZaniteOreBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_ore")
 	public static final Block block = null;
 	public ZaniteOreBlock(AetherrebornModElements instance) {
-		super(instance, 63);
+		super(instance, 44);
 	}
 
 	@Override

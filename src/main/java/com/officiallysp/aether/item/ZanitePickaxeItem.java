@@ -16,7 +16,7 @@ public class ZanitePickaxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_pickaxe")
 	public static final Item block = null;
 	public ZanitePickaxeItem(AetherrebornModElements instance) {
-		super(instance, 49);
+		super(instance, 30);
 	}
 
 	@Override

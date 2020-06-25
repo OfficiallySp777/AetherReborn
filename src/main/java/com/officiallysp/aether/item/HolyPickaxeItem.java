@@ -22,7 +22,7 @@ public class HolyPickaxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_pickaxe")
 	public static final Item block = null;
 	public HolyPickaxeItem(AetherrebornModElements instance) {
-		super(instance, 15);
+		super(instance, 25);
 	}
 
 	@Override

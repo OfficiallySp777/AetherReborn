@@ -38,7 +38,7 @@ public class HolystoneFenceBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holystone_fence")
 	public static final Block block = null;
 	public HolystoneFenceBlock(AetherrebornModElements instance) {
-		super(instance, 93);
+		super(instance, 13);
 	}
 
 	@Override

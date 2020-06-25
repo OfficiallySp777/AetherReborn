@@ -33,7 +33,7 @@ public class SkyrootFenceBlock extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_fence")
 	public static final Block block = null;
 	public SkyrootFenceBlock(AetherrebornModElements instance) {
-		super(instance, 97);
+		super(instance, 8);
 	}
 
 	@Override

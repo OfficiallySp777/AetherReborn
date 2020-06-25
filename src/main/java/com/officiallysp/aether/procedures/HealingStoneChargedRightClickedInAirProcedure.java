@@ -16,7 +16,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class HealingStoneChargedRightClickedInAirProcedure extends AetherrebornModElements.ModElement {
 	public HealingStoneChargedRightClickedInAirProcedure(AetherrebornModElements instance) {
-		super(instance, 85);
+		super(instance, 89);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

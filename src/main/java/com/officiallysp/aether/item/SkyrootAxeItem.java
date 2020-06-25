@@ -16,7 +16,7 @@ public class SkyrootAxeItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:skyroot_axe")
 	public static final Item block = null;
 	public SkyrootAxeItem(AetherrebornModElements instance) {
-		super(instance, 13);
+		super(instance, 22);
 	}
 
 	@Override

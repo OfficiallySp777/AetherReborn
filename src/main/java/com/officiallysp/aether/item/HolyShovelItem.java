@@ -22,7 +22,7 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:holy_shovel")
 	public static final Item block = null;
 	public HolyShovelItem(AetherrebornModElements instance) {
-		super(instance, 17);
+		super(instance, 27);
 	}
 
 	@Override

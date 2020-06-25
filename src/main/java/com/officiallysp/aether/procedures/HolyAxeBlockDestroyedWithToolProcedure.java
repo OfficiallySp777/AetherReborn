@@ -5,7 +5,7 @@ import com.officiallysp.aether.AetherrebornModElements;
 @AetherrebornModElements.ModElement.Tag
 public class HolyAxeBlockDestroyedWithToolProcedure extends AetherrebornModElements.ModElement {
 	public HolyAxeBlockDestroyedWithToolProcedure(AetherrebornModElements instance) {
-		super(instance, 38);
+		super(instance, 67);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -15,7 +15,7 @@ public class ZaniteGemItem extends AetherrebornModElements.ModElement {
 	@ObjectHolder("aetherreborn:zanite_gem")
 	public static final Item block = null;
 	public ZaniteGemItem(AetherrebornModElements instance) {
-		super(instance, 48);
+		super(instance, 29);
 	}
 
 	@Override
