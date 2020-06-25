@@ -1,5 +1,6 @@
 {
   "item.aetherreborn.zanite_armorlegs": "Zanite Leggings",
+  "item.aetherreborn.sheepuff": "Sheepuff Spawn Egg",
   "item.aetherreborn.zanite_armorbody": "Zanite Chestplate",
   "block.aetherreborn.gravitite_ore_block": "Enchanted Gravitite",
   "block.aetherreborn.skyroot_trapdoor": "Skyroot Trapdoor",
@@ -56,6 +57,7 @@
   "block.aetherreborn.skyroot_stairs": "Skyroot Stairs",
   "block.hmmmm.skyroot_leaves": "Skyroot Leaves",
   "block.aether_reborn.skyroot_plank": "Skyroot Plank",
+  "entity.aetherreborn.sheepuff": "Sheepuff",
   "block.aetherreborn.aether_dirt": "Aether Dirt",
   "item.aetherreborn.gravitite_axe": "Gravitite Axe",
   "block.aetherreborn.ambrosium_ore": "Ambrosium Ore",

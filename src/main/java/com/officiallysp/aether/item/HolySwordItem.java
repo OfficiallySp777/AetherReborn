@@ -59,6 +59,7 @@ public class HolySwordItem extends AetherrebornModElements.ModElement {
 				World world = entity.world;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
 					HolySwordLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;

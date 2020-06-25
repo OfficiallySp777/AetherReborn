@@ -60,6 +60,7 @@ public class HolyShovelItem extends AetherrebornModElements.ModElement {
 				int z = pos.getZ();
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
 					HolyShovelBlockDestroyedWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;

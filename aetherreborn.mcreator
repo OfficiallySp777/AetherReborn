@@ -333,7 +333,12 @@
       "ids": {},
       "registry_name": "holy_axe_block_destroyed_with_tool",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -345,7 +350,12 @@
       "ids": {},
       "registry_name": "holy_shovel_block_destroyed_with_tool",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -357,7 +367,12 @@
       "ids": {},
       "registry_name": "holy_sword_living_entity_is_hit_with_tool",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -977,6 +992,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "skyroot_stairs_craft"
+    },
+    {
+      "name": "Sheepuff",
+      "type": "mob",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheepuff"
+    },
+    {
+      "name": "FloatyMobs",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "floaty_mobs",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1000,6 +1041,7 @@
   "language_map": {
     "en_us": {
       "item.aetherreborn.zanite_armorlegs": "Zanite Leggings",
+      "item.aetherreborn.sheepuff": "Sheepuff Spawn Egg",
       "item.aetherreborn.zanite_armorbody": "Zanite Chestplate",
       "block.aetherreborn.gravitite_ore_block": "Enchanted Gravitite",
       "block.aetherreborn.skyroot_trapdoor": "Skyroot Trapdoor",
@@ -1056,6 +1098,7 @@
       "block.aetherreborn.skyroot_stairs": "Skyroot Stairs",
       "block.hmmmm.skyroot_leaves": "Skyroot Leaves",
       "block.aether_reborn.skyroot_plank": "Skyroot Plank",
+      "entity.aetherreborn.sheepuff": "Sheepuff",
       "block.aetherreborn.aether_dirt": "Aether Dirt",
       "item.aetherreborn.gravitite_axe": "Gravitite Axe",
       "block.aetherreborn.ambrosium_ore": "Ambrosium Ore",

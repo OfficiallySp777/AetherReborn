@@ -113,7 +113,7 @@ public class AltarGUIGui extends AetherrebornModElements.ModElement {
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 39) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 39) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 39) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(AmbrosiumShardItem.block, (int) (1)).getItem() == stack.getItem());
@@ -316,6 +316,10 @@ public class AltarGUIGui extends AetherrebornModElements.ModElement {
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("aetherreborn:textures/arrow.png"));
+			this.blit(this.guiLeft + 106, this.guiTop + 38, 0, 0, 256, 256);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("aetherreborn:textures/plus.png"));
+			this.blit(this.guiLeft + 52, this.guiTop + 38, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -325,6 +329,7 @@ public class AltarGUIGui extends AetherrebornModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+			this.font.drawString("Altar", 7, 11, -16777216);
 		}
 
 		@Override

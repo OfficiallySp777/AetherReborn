@@ -29,7 +29,7 @@
           "id": 1,
           "disableStackInteraction": false,
           "name": "Slot #1",
-          "x": 372,
+          "x": 408,
           "y": 150
         }
       },
@@ -41,6 +41,37 @@
           "name": "Slot #2",
           "x": 516,
           "y": 150
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "name": "arrow.png",
+          "x": 462,
+          "y": 150
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "plus.png",
+          "name": "plus.png",
+          "x": 354,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Altar",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Altar",
+          "x": 264,
+          "y": 96
         }
       }
     ]
